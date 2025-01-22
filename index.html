@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/main.js" defer></script>
+
+
+</head>
+
+<body>
+
+	<nav id="sidebar">
+		<span class="logo">CSS Roadmap</span>
+
+		<ul>
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>CSS Basics</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#what-is-css">What is CSS?</a></li>
+						<li><a href="#css-syntax-and-selectors">CSS Syntax and Selectors</a></li>
+						<li><a href="#types-of-css">Types of CSS (Inline, Internal, External)</a></li>
+						<li><a href="#adding-css-to-html">Adding CSS to HTML</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Selectors and Specificity</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#universal-type-class-id-selectors">Universal, Type, Class, and ID Selectors</a>
+						</li>
+						<li><a href="#grouping-selectors">Grouping Selectors</a></li>
+						<li><a href="#attribute-selectors">Attribute Selectors</a></li>
+						<li><a href="#pseudo-classes-and-pseudo-elements">Pseudo-classes and Pseudo-elements</a></li>
+						<li><a href="#specificity-and-cascade">Specificity and Cascade</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Colors and Backgrounds</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#color-models">Color Models (HEX, RGB, HSL)</a></li>
+						<li><a href="#text-and-background-colors">Text and Background Colors</a></li>
+						<li><a href="#background-images">Background Images</a></li>
+						<li><a href="#background-positioning-repeating-size">Background Positioning, Repeating, and
+								Size</a></li>
+						<li><a href="#gradients">Gradients (Linear, Radial, and Conic)</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Text and Typography</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#font-properties">Font Properties (Font Family, Size, Weight, Style)</a></li>
+						<li><a href="#line-height-letter-spacing-word-spacing">Line Height, Letter Spacing, and Word
+								Spacing</a></li>
+						<li><a href="#text-alignment-decoration">Text Alignment and Decoration</a></li>
+						<li><a href="#web-fonts">Web Fonts and @font-face</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Box Model</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#content-padding-border-margin">Content, Padding, Border, and Margin</a></li>
+						<li><a href="#box-sizing">Box Sizing</a></li>
+						<li><a href="#outline-vs-border">Outline vs. Border</a></li>
+						<li><a href="#overflow">Overflow (Visible, Hidden, Scroll, Auto)</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Layout and Positioning</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#display-property">Display Property (Block, Inline, Flex, Grid, etc.)</a></li>
+						<li><a href="#position-property">Position Property (Static, Relative, Absolute, Fixed,
+								Sticky)</a></li>
+						<li><a href="#float-clear">Float and Clear</a></li>
+						<li><a href="#z-index">Z-Index</a></li>
+						<li><a href="#css-layout-techniques">CSS Layout Techniques (Flexbox, Grid, and Float-based)</a>
+						</li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Responsive Design</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#media-queries">Introduction to Media Queries</a></li>
+						<li><a href="#mobile-first-vs-desktop-first">Mobile-First vs. Desktop-First Approach</a></li>
+						<li><a href="#css-units">CSS Units (px, %, em, rem, vh, vw, etc.)</a></li>
+						<li><a href="#fluid-typography">Fluid Typography and Responsive Images</a>
+						</li>
+						<li><a href="#breakpoints">Breakpoints and Best Practices</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Advanced Styling</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#css-transitions-animations">CSS Transitions and Animations</a></li>
+						<li><a href="#css-variables">CSS Variables (Custom Properties)</a></li>
+						<li><a href="#css-filters">CSS Filters (Blur, Brightness, etc.)</a></li>
+						<li><a href="#transformations">Transformations (Rotate, Scale, Skew, Translate)</a></li>
+						<li><a href="#advanced-selectors">Advanced Selectors (Nth-child, Not, etc.)</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>CSS for Accessibility</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#focus-styles">Focus Styles</a></li>
+						<li><a href="#visibility-and-contrast">Visibility and Contrast</a></li>
+						<li><a href="#screen-reader-support">Screen Reader Support (Hidden Elements and Aria)</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>Preprocessors and Frameworks</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#css-preprocessors">Introduction to CSS Preprocessors (Sass, LESS)</a></li>
+						<li><a href="#variables-mixins-nesting">Understanding Variables, Mixins, and Nesting</a></li>
+						<li><a href="#css-frameworks">CSS Frameworks (Bootstrap, Tailwind, etc.)</a></li>
+						<li><a href="#modular-css-best-practices">Best Practices for Modular CSS</a></li>
+					</div>
+				</ul>
+			</li>
+
+			<li>
+				<button onclick="toggleSubMenu(this)" class="dropdown-btn">
+					<span>CSS Best Practices</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+						fill="#e8eaed">
+						<path
+							d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+					</svg>
+				</button>
+				<ul class="sub-menu">
+					<div>
+						<li><a href="#scalable-maintainable-css">Writing Scalable and Maintainable CSS</a></li>
+						<li><a href="#naming-conventions">Naming Conventions (BEM, OOCSS, SMACSS)</a></li>
+						<li><a href="#avoiding-common-pitfalls">Avoiding Common Pitfalls (Over-Specificity, Unused
+								CSS)</a></li>
+						<li><a href="#debugging-tools">Debugging and Browser Developer Tools</a></li>
+					</div>
+				</ul>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<div class="container">
+
+		<div class="content">
+
+			<h1 id="css-basics">CSS Basics (Getting Started 🎉)</h1>
+
+			<h2 id="what-is-css">1. <em>What is CSS? 🌈</em></h2>
+			<p>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and layout of HTML
+				documents. While HTML structures the content of a webpage, CSS adds design, enabling developers to
+				create visually appealing and user-friendly websites.</p><br>
+			<p>The term "cascading" refers to how CSS rules are applied based on priorities. Multiple styles can affect
+				the same element, and CSS determines which rules take precedence using a hierarchy known as specificity.
+				This feature ensures flexibility in styling, allowing developers to define broad rules for an entire
+				site and more specific rules for particular sections or elements.</p><br>
+			<p>CSS is essential for web design as it allows customization of various visual aspects, including colors,
+				fonts, margins, padding, borders, and positioning. It supports responsive design, enabling websites to
+				adjust seamlessly across different screen sizes, from desktops to smartphones. By separating content
+				(HTML) from design (CSS), it simplifies maintenance and improves efficiency in web development.</p><br>
+			<p>Modern CSS also supports advanced features such as animations, transitions, and grid-based layouts,
+				making it a powerful tool for creating complex and interactive designs.</p><br>
+
+			<hr>
+
+			<h3 id="css-syntax-and-selectors">1.1 CSS Syntax and Selectors:</h3>
+			<p><strong>Definition:</strong><br>
+				CSS syntax forms the foundation of how styles are written and applied to HTML elements. A CSS rule is
+				composed of two main parts:</p><br>
+			<ul>
+				<li><strong>Selector:</strong> This defines the HTML element(s) the style will apply to. For example, a
+					selector can target an element by its tag name (`h1`), class (`.classname`), ID (`#id`), or other
+					attributes.</li>
+				<li><strong>Declaration Block:</strong> Enclosed in curly braces `{}`, this block contains one or more
+					declarations. Each declaration is a pair of a property (such as `color` or `font-size`) and its
+					corresponding value (like `blue` or `16px`). Declarations are separated by semicolons (`;`).</li>
+				<br>
+			</ul>
+			<p>CSS Selectors are versatile and allow developers to apply styles at various levels of specificity. Common
+				selectors include:</p><br>
+			<ul>
+				<li><strong>Universal Selector (`*`):</strong> Targets all elements on a page.</li>
+				<li><strong>Type Selector:</strong> Matches elements by their tag name, such as `p` or `div`.</li>
+				<li><strong>Class Selector (`.classname`):</strong> Targets elements with a specific class.</li>
+				<li><strong>ID Selector (`#id`):</strong> Targets a unique element with a specific ID.</li>
+				<li><strong>Group Selector:</strong> Applies the same style to multiple elements, separated by commas,
+					such as `h1, h2, p`.</li>
+				<li><strong>Attribute Selector:</strong> Matches elements based on their attributes, such as
+					`[type="text"]`.</li>
+			</ul>
+			<p>Selectors enable developers to target and style elements effectively, providing flexibility in the design
+				process. Understanding how selectors work is fundamental for creating precise and efficient stylesheets.
+			</p>
+
+			<hr>
+
+			<h3 id="types-of-css">1.2 Types of CSS:</h3>
+			<p>CSS can be incorporated into a webpage in three main ways, each with specific use cases:</p>
+			<ul><br>
+				<li><strong>Inline CSS:</strong> This type of CSS is applied directly to individual HTML elements using
+					the `style` attribute. For example, <code>&lt;h1 style="color: red;"&gt;Hello&lt;/h1&gt;</code>
+					applies the `color: red` style to that specific `h1` element. Inline CSS is quick for making small,
+					localized changes but is not ideal for larger projects because it can make the code harder to read
+					and maintain.</li><br>
+				<li><strong>Internal CSS:</strong> Internal styles are defined within the <code>&lt;style&gt;</code> tag
+					in the <code>&lt;head&gt;</code> section of an HTML document. This method is useful for defining
+					styles specific to a single page. However, it becomes less practical for websites with multiple
+					pages, as styles must be repeated for each page.</li><br>
+				<li><strong>External CSS:</strong> External styles are stored in a separate file with a `.css` extension
+					and linked to the HTML document using the <code>&lt;link&gt;</code> tag. This approach is highly
+					scalable and efficient, as a single stylesheet can control the styles of multiple web pages. It
+					allows for easier updates and ensures consistency across the site.</li><br>
+			</ul>
+			<p>Understanding these types helps developers decide how to implement CSS based on the size and complexity
+				of the project. For large-scale websites, external CSS is the preferred method due to its
+				maintainability and reusability.</p><br>
+
+			<hr>
+
+			<h3 id="adding-css-to-html">1.3 Adding CSS to HTML:</h3>
+			<p><strong>How to Add CSS:</strong><br>
+				CSS can be integrated into HTML in three primary ways, depending on the project's requirements:</p>
+			<ol><br>
+				<li><strong>Inline CSS:</strong> Add styles directly to an HTML element using the `style` attribute.
+					This method is best for small, one-off customizations but is discouraged for larger projects due to
+					reduced maintainability.</li><br>
+				<li><strong>Internal CSS:</strong> Use the <code>&lt;style&gt;</code> tag within the
+					<code>&lt;head&gt;</code> section of an HTML document to include styles specific to that page. This
+					method keeps the styles centralized for a single page but is inefficient for multi-page websites.
+				</li><br>
+				<li><strong>External CSS:</strong> Create a separate `.css` file containing all the styles and link it
+					to the HTML document using a <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section.
+					External CSS is highly efficient, as a single stylesheet can control the styles for multiple pages,
+					ensuring consistency and making updates easier.</li><br>
+			</ol>
+			<p>Choosing the right method depends on the context and scope of the project. Inline CSS is rarely used in
+				professional web development, while external CSS is the standard for its scalability and organization.
+			</p>
+
+		</div>
+		<hr>
+		<div class="content">
+			<h1 id="selectors-and-specificity">Selectors and Specificity (Targeting with Precision 🎯)</h1>
+
+			<h2 id="universal-type-class-id-selectors">2.1. Universal, Type, Class, and ID Selectors</h2>
+			<p><strong>Definition:</strong><br>
+				Selectors in CSS allow you to target HTML elements and apply styles to them. They help in defining which
+				elements the style rules will affect. Universal, Type, Class, and ID selectors are among the most
+				commonly used basic selectors:</p>
+			<ul>
+				<li><strong>Universal Selector (`*`):</strong> Targets all elements on a webpage. Useful for applying
+					global styles.</li>
+				<li><strong>Type Selector:</strong> Targets elements by their tag name, such as `h1`, `p`, or `
+					div`. These are used for styling specific types of elements consistently.</li>
+				<li><strong>Class Selector (`.classname`):</strong> Targets elements assigned with a specific class
+					attribute. It allows for reusable styles across multiple elements.</li>
+				<li><strong>ID Selector (`#idname`):</strong> Targets a single, unique element with a specific ID
+					attribute. It is useful for applying styles to one specific element on the page.</li>
+			</ul>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Universal Selector */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	/* Type Selector */
+	p {
+		color: blue;
+		font-size: 16px;
+	}
+	/* Class Selector */
+	.card {
+		border: 1px solid #ccc;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	/* ID Selector */
+	#header {
+		background-color: #f4f4f4;
+		padding: 20px;
+		text-align: center;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;div id="header"&gt;Welcome to My Website&lt;/div&gt;
+	&lt;p&gt;This is a paragraph.&lt;/p&gt;
+	&lt;div class="card"&gt;This is a card element.&lt;/div&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong><br>
+				This code applies global styles (removing margin and padding), styles paragraphs in blue, adds a border
+				to elements with the class `card`, and changes the background of the element with the ID `header` to
+				light gray.</p>
+
+
+			<hr>
+
+			<h2 id="grouping-selectors">2.2. Grouping Selectors</h2>
+			<p><strong>Definition:</strong><br>
+				Grouping selectors allow you to apply the same style to multiple elements simultaneously. Instead of
+				repeating rules for each element, you can list them together, separated by commas. This improves
+				efficiency and keeps the CSS code concise.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	h1, h2, h3 {
+		color: green;
+		font-family: Arial, sans-serif;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;h1&gt;Heading 1&lt;/h1&gt;
+	&lt;h2&gt;Heading 2&lt;/h2&gt;
+	&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong><br>
+				All headings (`h1`, `h2`, and `h3`) will have green text and use the Arial font.</p>
+
+			<hr>
+
+			<h2 id="attribute-selectors">2.3. Attribute Selectors</h2>
+			<p><strong>Definition:</strong><br>
+				Attribute selectors target elements based on their attributes and attribute values. They are useful for
+				styling elements dynamically based on conditions.</p>
+			<p>Types of attribute selectors include:</p>
+			<ul>
+				<li><strong>[attribute]:</strong> Selects elements with the specified attribute.</li>
+				<li><strong>[attribute="value"]:</strong> Matches elements with an exact attribute value.</li>
+				<li><strong>[attribute^="value"]:</strong> Matches elements whose attribute values start with the
+					specified string.</li>
+				<li><strong>[attribute$="value"]:</strong> Matches elements whose attribute values end with the
+					specified string.</li>
+				<li><strong>[attribute*="value"]:</strong> Matches elements whose attribute values contain the specified
+					string.</li>
+			</ul>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Select all input elements */
+	input {
+		border: 1px solid #ccc;
+	}
+	/* Select inputs with type "text" */
+	input[type="text"] {
+		background-color: #f9f9f9;
+	}
+	/* Select inputs whose type starts with "pass" */
+	input[type^="pass"] {
+		border: 2px solid blue;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;input type="text" placeholder="Enter your name"&gt;
+	&lt;input type="password" placeholder="Enter your password"&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong><br>
+				Input fields have general styling, text inputs have a light gray background, and password fields have a
+				blue border.</p>
+
+			<hr>
+
+			<h2 id="pseudo-classes-and-pseudo-elements">2.4. Pseudo-classes and Pseudo-elements</h2>
+			<p><strong>Definition:</strong><br>
+				Pseudo-classes and pseudo-elements allow you to style elements based on their state or specific parts of
+				an element:</p>
+			<ul>
+				<li><strong>Pseudo-classes:</strong> Style elements based on their state or user interaction, such as
+					`:hover` for mouse hover or `:nth-child()` for selecting specific child elements.</li>
+				<li><strong>Pseudo-elements:</strong> Style specific parts of an element, such as the first line
+					(`::first-line`) or inserting content before/after an element (`::before` and `::after`).</li>
+			</ul>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	a:hover {
+		color: red;
+	}
+	p::first-line {
+		font-weight: bold;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;a href="#"&gt;Hover over this link&lt;/a&gt;
+	&lt;p&gt;This is an example paragraph to demonstrate pseudo-elements.&lt;/p&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong><br>
+				Links turn red on hover, and the first line of the paragraph becomes bold.</p>
+
+			<hr>
+
+			<h2 id="specificity-and-cascade">2.5. Specificity and Cascade</h2>
+			<p><strong>Definition:</strong><br>
+				Specificity determines which CSS rule is applied when multiple rules target the same element. The
+				cascade defines the order in which rules are applied, considering specificity, source order, and
+				importance (e.g., `!important`).</p>
+			<p>Specificity is calculated based on the selector type:</p>
+			<ul>
+				<li><strong>Inline styles:</strong> Have the highest specificity (e.g., `style="..."`).</li>
+				<li><strong>ID selectors:</strong> Have higher specificity than class, attribute, or type selectors.
+				</li>
+				<li><strong>Class selectors:</strong> Have lower specificity than IDs but higher than type selectors.
+				</li>
+				<li><strong>Type selectors:</strong> Have the lowest specificity.</li>
+			</ul>
+			<p>The cascade ensures that rules declared later override earlier ones unless the earlier rule has higher
+				specificity or uses `!important`.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Type Selector */
+	p {
+		color: green;
+	}
+	/* Class Selector */
+	.text {
+		color: blue;
+	}
+	
+&lt;/style&gt;
+&lt;body&gt;
+	/* Inline Style */
+	&lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;
+	&lt;p class="text"&gt;This text is blue.&lt;/p&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong><br>
+				Inline styles (red) override class (blue) and type (green) styles due to higher specificity.</p>
+
+		</div>
+		<hr>
+		<div class="content">
+			<h1 id="colors-and-backgrounds">Colors and Backgrounds (🎨 A Splash of Style)</h1>
+
+			<h2 id="color-models">3.1 Color Models (HEX, RGB, HSL)</h2>
+			<p><strong>Definition:</strong><br>
+				Colors in CSS can be defined using various models, allowing developers to choose the most suitable
+				method for their design needs. The primary color models are:</p>
+			<ul>
+				<li><strong>HEX (Hexadecimal):</strong> A six-character code preceded by `#`, where each pair of
+					characters represents red, green, and blue values (e.g., `#FF5733`). HEX is compact and commonly
+					used in web design.</li>
+				<li><strong>RGB (Red, Green, Blue):</strong> Specifies the intensity of red, green, and blue colors
+					using values between 0 and 255 (e.g., `rgb(255, 87, 51)`). RGB is ideal for designs requiring
+					precise control over color blending.</li>
+				<li><strong>HSL (Hue, Saturation, Lightness):</strong> Defines colors based on hue (the type of color),
+					saturation (intensity), and lightness (brightness). For example, `hsl(12, 100%, 60%)` represents a
+					vivid orange. HSL is intuitive for creating color palettes.</li>
+			</ul>
+			<p>Each model offers unique advantages, and developers often choose based on familiarity, readability, or
+				specific design requirements.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	body {
+		background-color: #FF5733; /* Using HEX */
+		color: rgb(255, 255, 255); /* Using RGB */
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;h1&gt;Welcome to CSS Colors!&lt;/h1&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong></p>
+			<div class="output-box" style="background-color:#FF5733; color:#FFFFFF; padding:10px;">
+				<h1>Welcome to CSS Colors!</h1>
+			</div>
+
+			<hr>
+
+			<h2 id="text-and-background-colors">3.2 Text and Background Colors</h2>
+			<p><strong>Definition:</strong><br>
+				CSS allows customization of text and background colors to enhance readability and aesthetics. The
+				`color` property sets the text color, while the `background-color` property defines the background color
+				of an element.</p>
+			<p>Both properties support all color models (HEX, RGB, and HSL) and named colors (e.g., `red`, `blue`,
+				`lightgray`). Transparent colors can also be specified using `rgba` or `hsla` models, which include an
+				alpha value for transparency.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	p {
+		color: #FF5733; /* Text color */
+		background-color: rgba(0, 0, 0, 0.1); 
+		/* Light gray background with transparency */
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;p&gt;This paragraph has styled text and background colors.&lt;/p&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong></p>
+			<div class="output-box" style="color:#FF5733; background-color:rgba(0, 0, 0, 0.1); padding:10px;">
+				<p>This paragraph has styled text and background colors.</p>
+			</div>
+
+			<hr>
+
+			<h2 id="background-images">3.3 Background Images</h2>
+			<p><strong>Definition:</strong><br>
+				The `background-image` property in CSS allows developers to set images as the background of an element.
+				This property supports various image formats, including JPEG, PNG, SVG, and GIF.</p>
+			<p>By default, the background image repeats to fill the element. Developers can combine `background-image`
+				with other properties to control positioning, size, and behavior for responsive and visually appealing
+				designs.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	div {
+		background-image: url('background.jpg'); 
+		/* Image as background */
+		width: 300px;
+		height: 150px;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;div&gt;This div has a background image.&lt;/div&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong></p>
+			<div class="output-box"
+				style="background-image:url('background.jpg'); width:300px; height:150px; border:1px solid #000;">
+				This div has a background image.
+			</div>
+
+			<hr>
+
+			<h2 id="background-positioning-repeating-size">3.4 Background Positioning, Repeating, and Size</h2>
+			<p><strong>Definition:</strong><br>
+				CSS provides several properties to control how background images are displayed:</p>
+			<ul>
+				<li><strong>Background Position:</strong> Specifies the starting point of the background image. Values
+					include keywords (`top`, `center`, `bottom`) or percentages/lengths (`50% 50%` or `10px 20px`).</li>
+				<li><strong>Background Repeat:</strong> Controls whether the image repeats. Options include `repeat`,
+					`repeat-x`, `repeat-y`, or `no-repeat`.</li>
+				<li><strong>Background Size:</strong> Defines the size of the background image. Values include `auto`
+					(default), `cover` (scales to cover the entire element), and `contain` (scales to fit the element).
+				</li>
+			</ul>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	div {
+		background-image: url('background.jpg');
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat */
+		background-size: cover; /* Scale to cover the element */
+		width: 300px;
+		height: 150px;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;div&gt;This div has a styled background image.&lt;/div&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong></p>
+			<div class="output-box"
+				style="background-image:url('background.jpg'); background-position:center; background-repeat:no-repeat; background-size:cover; width:300px; height:150px; border:1px solid #000;">
+				This div has a styled background image.
+			</div>
+
+			<hr>
+
+			<h2 id="gradients">3.5 Gradients (Linear, Radial, and Conic)</h2>
+			<p><strong>Definition:</strong><br>
+				Gradients in CSS allow smooth transitions between colors without requiring image files. Gradients can be
+				applied using the `background` or `background-image` property. Types of gradients include:</p>
+			<ul>
+				<li><strong>Linear Gradient:</strong> Colors transition along a straight line. For example,
+					`linear-gradient(to right, red, yellow)` creates a gradient from red to yellow horizontally.</li>
+				<li><strong>Radial Gradient:</strong> Colors transition outward in a circular pattern. For example,
+					`radial-gradient(circle, red, yellow)` creates a radial gradient.</li>
+				<li><strong>Conic Gradient:</strong> Colors transition around a central point in a conical shape. For
+					example, `conic-gradient(from 0deg, red, yellow)` creates a conic gradient.</li>
+			</ul>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	div {
+		background: linear-gradient(to right, #FF5733, #FFC300); 
+		/* Orange to yellow gradient */
+		width: 300px;
+		height: 150px;
+	}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;div&gt;This div has a linear gradient background.&lt;/div&gt;
+&lt;/body&gt;
+	</code></pre>
+			</div>
+			<p><strong>Output:</strong></p>
+			<div class="output-box"
+				style="background:linear-gradient(to right, #FF5733, #FFC300); width:300px; height:150px; border:1px solid #000;">
+				This div has a linear gradient background.
+			</div>
+		</div>
+		<hr>
+		<div class="content">
+			<h1 id="text-and-typography">4. Text and Typography (📖 Styling Words)</h1>
+
+			<h2 id="font-properties">4.1 <em>Font Properties</em></h2>
+			<p>Font properties define the visual style of text on a webpage. These properties allow precise control over
+				how text appears, including its typeface, size, weight, and style:</p><br>
+			<ul>
+				<li><strong>Font Family:</strong> Defines the typeface used for text. Developers can specify multiple
+					fonts as fallbacks in case the preferred font is unavailable. For example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		p {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		&lt;/style&gt;
+		
+		&lt;p&gt;This is a sample paragraph using Arial font.&lt;/p&gt;
+		</code></pre>
+				</div>
+				<li><strong>Font Size:</strong> Sets the size of the text. It can be defined using various units like
+					pixels (`px`), ems (`em`), or percentages (`%`). For example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		h1 {
+			font-size: 24px;
+		}
+		&lt;/style&gt;
+		
+		&lt;h1&gt;This is a heading with font size 24px.&lt;/h1&gt;
+		</code></pre>
+				</div>
+				<li><strong>Font Weight:</strong> Controls the thickness or boldness of text. It accepts predefined
+					values like `normal` and `bold`, or numeric values ranging from `100` (thin) to `900` (extra bold).
+					Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		strong {
+			font-weight: bold;
+		}
+		p.light {
+			font-weight: 300;
+		}
+		&lt;/style&gt;
+		
+		&lt;strong&gt;This is bold text.&lt;/strong&gt;
+		&lt;p class="light"&gt;This is light text.&lt;/p&gt;
+		</code></pre>
+				</div>
+				<li><strong>Font Style:</strong> Specifies whether the text is italicized, oblique, or normal. Example:
+				</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		em {
+			font-style: italic;
+		}
+		&lt;/style&gt;
+		
+		&lt;em&gt;This is italic text.&lt;/em&gt;
+		</code></pre>
+				</div>
+			</ul>
+			<p>By combining these properties, developers can create appealing and professional text designs.</p><br>
+
+			<hr>
+
+			<h2 id="line-height-letter-spacing-word-spacing">4.2 <em>Line Height, Letter Spacing, and Word Spacing</em>
+			</h2>
+			<p>Spacing properties are essential for improving text readability and creating visually appealing layouts:
+			</p><br>
+			<ul>
+				<li><strong>Line Height:</strong> Controls the vertical space between lines of text. It can be specified
+					as a number, percentage, or unit. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		p {
+			line-height: 1.5;
+		}
+		&lt;/style&gt;
+		
+		&lt;p&gt;This paragraph has 1.5 line height.&lt;/p&gt;
+		</code></pre>
+				</div>
+				<li><strong>Letter Spacing:</strong> Adjusts the horizontal space between characters. This is useful for
+					creating either compact or spaced-out text. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		h1 {
+			letter-spacing: 2px;
+		}
+		&lt;/style&gt;
+		
+		&lt;h1&gt;Spaced out heading&lt;/h1&gt;
+		</code></pre>
+				</div>
+				<li><strong>Word Spacing:</strong> Modifies the horizontal space between words in a block of text.
+					Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		p {
+			word-spacing: 5px;
+		}
+		&lt;/style&gt;
+		
+		&lt;p&gt;This paragraph has extra space between words.&lt;/p&gt;
+		</code></pre>
+				</div>
+			</ul>
+			<p>These properties are crucial for achieving a clean and visually pleasing text layout.</p><br>
+
+			<hr>
+
+			<h2 id="text-alignment-and-decoration">4.3 <em>Text Alignment and Decoration</em></h2>
+			<p>Text alignment and decoration allow developers to organize and style text effectively:</p><br>
+			<ul>
+				<li><strong>Text Alignment:</strong> Aligns text horizontally within its container. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		p {
+			text-align: justify;
+		}
+		&lt;/style&gt;
+		
+		&lt;p&gt;This paragraph is justified, making it evenly spaced on both sides.&lt;/p&gt;
+		</code></pre>
+				</div>
+				<li><strong>Text Decoration:</strong> Adds or removes decorations like underlines, overlines, or
+					line-throughs. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		a {
+			text-decoration: none;
+		}
+		del {
+			text-decoration: line-through;
+		}
+		&lt;/style&gt;
+		
+		&lt;a href="#"&gt;This is a link without an underline.&lt;/a&gt;
+		&lt;del&gt;This is deleted text.&lt;/del&gt;
+		</code></pre>
+				</div>
+			</ul>
+			<p>These properties help enhance the presentation and organization of text on a webpage.</p><br>
+
+			<hr>
+
+			<h2 id="web-fonts-and-font-face">4.4 <em>Web Fonts and @font-face</em></h2>
+			<p>Web fonts allow developers to use custom fonts, ensuring a consistent appearance across devices. The
+				<code>@font-face</code> rule is used to load external fonts:
+			</p><br>
+			<ul>
+				<li><strong>@font-face:</strong> Enables custom fonts by linking to font files hosted locally or
+					externally. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;style&gt;
+		@font-face {
+			font-family: 'OpenSans';
+			src: url('OpenSans-Regular.woff2') format('woff2'),
+				 url('OpenSans-Regular.woff') format('woff');
+		}
+		body {
+			font-family: 'OpenSans', Arial, sans-serif;
+		}
+		&lt;/style&gt;
+		
+		&lt;body&gt;This is text using a custom OpenSans font.&lt;/body&gt;
+		</code></pre>
+				</div>
+				<li><strong>Web Font Services:</strong> Platforms like Google Fonts provide easy access to a variety of
+					fonts. Example:</li>
+				<div class="code-box">
+					<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+					<pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+		
+		&lt;style&gt;
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+		&lt;/style&gt;
+		
+		&lt;body&gt;This is text using the Roboto font from Google Fonts.&lt;/body&gt;
+		</code></pre>
+				</div>
+			</ul>
+			<p>Using web fonts ensures that text remains visually consistent, regardless of the user’s system fonts.</p>
+			<br>
+		</div>
+		<hr>
+		<div class="content">
+			<h1 id="box-model">5. Box Model (📦 Understanding the Foundation)</h1>
+
+			<h2 id="content-padding-border-margin">5.1 <em>Content, Padding, Border, and Margin</em></h2>
+			<p>The box model is a fundamental concept in CSS that determines how elements are displayed and spaced on a
+				webpage. Every element is treated as a rectangular box, consisting of:</p>
+			<ul>
+				<li><strong>Content:</strong> The actual content inside the box (e.g., text, images).</li>
+				<li><strong>Padding:</strong> The space between the content and the border. It provides internal
+					spacing.</li>
+				<li><strong>Border:</strong> The line that wraps around the padding and content.</li>
+				<li><strong>Margin:</strong> The space outside the border, creating distance from other elements.</li>
+			</ul>
+			<p>Here’s an example to illustrate:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		div {
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			border: 5px solid black;
+			margin: 15px;
+			background-color: lightblue;
+		}
+		&lt;/style&gt;
+		
+		&lt;div&gt;This is a box model example.&lt;/div&gt;
+		</code></pre>
+			</div>
+			<p>In this example:</p>
+			<ul>
+				<li>The content is the text inside the box.</li>
+				<li>The padding creates 20px of space between the text and the border.</li>
+				<li>The border is 5px wide and black in color.</li>
+				<li>The margin creates 15px of space between this box and other elements.</li>
+			</ul>
+
+			<hr>
+
+			<h2 id="box-sizing">5.2 <em>Box Sizing</em></h2>
+			<p>The <strong>box-sizing</strong> property determines how the total size of an element is calculated. By
+				default, padding and border are added to the width and height of an element, which can be confusing.</p>
+			<p>There are two main values:</p>
+			<ul>
+				<li><strong>content-box:</strong> The default value. The width and height include only the content;
+					padding and border are added separately.</li>
+				<li><strong>border-box:</strong> The width and height include the content, padding, and border.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		div.content-box {
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			border: 5px solid black;
+			box-sizing: content-box;
+			background-color: lightcoral;
+		}
+		
+		div.border-box {
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			border: 5px solid black;
+			box-sizing: border-box;
+			background-color: lightgreen;
+		}
+		&lt;/style&gt;
+		
+		&lt;div class="content-box"&gt;Content-Box Example&lt;/div&gt;
+		&lt;div class="border-box"&gt;Border-Box Example&lt;/div&gt;
+		</code></pre>
+			</div>
+			<p>Notice how the total size of the box differs based on the <code>box-sizing</code> value.</p>
+
+			<hr>
+
+			<h2 id="outline-vs-border">5.3 <em>Outline vs. Border</em></h2>
+			<p>The <strong>outline</strong> and <strong>border</strong> are often confused, but they serve different
+				purposes:</p>
+			<ul>
+				<li><strong>Border:</strong> Part of the box model; it affects the size of the element.</li>
+				<li><strong>Outline:</strong> Does not affect the box model and is drawn outside the border.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		div {
+			width: 200px;
+			height: 100px;
+			border: 5px solid black;
+			outline: 3px dashed red;
+			background-color: lightyellow;
+		}
+		&lt;/style&gt;
+		
+		&lt;div&gt;This box has a border and an outline.&lt;/div&gt;
+		</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="overflow">5.4 <em>Overflow (Visible, Hidden, Scroll, Auto)</em></h2>
+			<p>The <strong>overflow</strong> property controls how content is displayed when it exceeds the size of its
+				container:</p>
+			<ul>
+				<li><strong>visible:</strong> The content spills out of the container (default).</li>
+				<li><strong>hidden:</strong> The content is clipped and not visible.</li>
+				<li><strong>scroll:</strong> The content is clipped, but scrollbars are added to view the overflowing
+					content.</li>
+				<li><strong>auto:</strong> Scrollbars appear only if the content overflows.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		div.visible {
+			width: 150px;
+			height: 50px;
+			overflow: visible;
+			background-color: lightblue;
+		}
+		
+		div.hidden {
+			width: 150px;
+			height: 50px;
+			overflow: hidden;
+			background-color: lightpink;
+		}
+		
+		div.scroll {
+			width: 150px;
+			height: 50px;
+			overflow: scroll;
+			background-color: lightgreen;
+		}
+		
+		div.auto {
+			width: 150px;
+			height: 50px;
+			overflow: auto;
+			background-color: lightgray;
+		}
+		&lt;/style&gt;
+		
+		&lt;div class="visible"&gt;This is an example of overflow: visible.&lt;/div&gt;
+
+		&lt;div class="hidden"&gt;This is an example of overflow: hidden. 
+		Content is clipped.&lt;/div&gt;
+
+		&lt;div class="scroll"&gt;This is an example of overflow: scroll. 
+		Content is scrollable.&lt;/div&gt;
+
+		&lt;div class="auto"&gt;This is an example of overflow: auto. 
+		Scrollbars appear if needed.&lt;/div&gt;
+		</code></pre>
+			</div>
+
+
+			<hr>
+
+
+		</div>
+		<hr>
+		<div class="content">
+			<h1 id="layout-and-positioning">6. Layout and Positioning (📐 Structuring the Page)</h1>
+
+			<h2 id="display-property">6.1 <em>Display Property (Block, Inline, Flex, Grid, etc.)</em></h2>
+			<p>The <strong>display</strong> property determines how an element is rendered on the page. It is crucial
+				for controlling the flow and arrangement of elements. Let's understand the most common display values:
+			</p>
+			<ul>
+				<li><strong>block:</strong>
+					<p>An element with <code>display: block</code> takes up the entire width of its parent container,
+						starting on a new line. Block elements stack vertically by default. Examples:
+						<code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.
+					</p>
+				</li>
+				<li><strong>inline:</strong>
+					<p>An element with <code>display: inline</code> only takes up as much width as its content and does
+						not force a new line. Examples: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>,
+						<code>&lt;strong&gt;</code>.
+					</p>
+				</li>
+				<li><strong>flex:</strong>
+					<p>The <code>display: flex</code> value enables a powerful one-dimensional layout system where items
+						are placed along a single row or column. It offers flexibility for alignment, spacing, and
+						resizing.</p>
+				</li>
+				<li><strong>grid:</strong>
+					<p>The <code>display: grid</code> value enables a two-dimensional layout system, allowing precise
+						control over rows and columns for more complex designs.</p>
+				</li>
+				<li><strong>inline-block:</strong>
+					<p>An element with <code>display: inline-block</code> behaves like an inline element but allows
+						block-level properties like width, height, and margin.</p>
+				</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Block Example */
+		.block {
+			display: block;
+			background-color: lightblue;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		
+		/* Inline Example */
+		.inline {
+			display: inline;
+			background-color: lightgreen;
+			padding: 5px;
+		}
+		
+		/* Flex Example */
+		.flex {
+			display: flex;
+			gap: 10px;
+			background-color: lightcoral;
+			padding: 10px;
+		}
+		
+		/* Grid Example */
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+			background-color: lightgray;
+			padding: 10px;
+		}
+		&lt;/style&gt;
+		
+		&lt;div class="block"&gt;Block Element&lt;/div&gt;
+		&lt;span class="inline"&gt;Inline Element 1&lt;/span&gt;
+		&lt;span class="inline"&gt;Inline Element 2&lt;/span&gt;
+		
+		&lt;div class="flex"&gt;
+			&lt;div&gt;Flex Item 1&lt;/div&gt;
+			&lt;div&gt;Flex Item 2&lt;/div&gt;
+			&lt;div&gt;Flex Item 3&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="grid"&gt;
+			&lt;div&gt;Grid Item 1&lt;/div&gt;
+			&lt;div&gt;Grid Item 2&lt;/div&gt;
+			&lt;div&gt;Grid Item 3&lt;/div&gt;
+		&lt;/div&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="position-property">6.2 <em>Position Property (Static, Relative, Absolute, Fixed, Sticky)</em></h2>
+			<p>The <strong>position</strong> property is used to determine how an element is placed in the document.
+				Let's explore each value in detail:</p>
+			<ul>
+				<li><strong>static:</strong>
+					<p>This is the default value. Elements follow the natural flow of the document, stacking on top of
+						one another.</p>
+				</li>
+				<li><strong>relative:</strong>
+					<p>Elements are positioned relative to their normal flow position. Using <code>top</code>,
+						<code>left</code>, <code>right</code>, or <code>bottom</code> adjusts their position without
+						disrupting surrounding elements.
+					</p>
+				</li>
+				<li><strong>absolute:</strong>
+					<p>Elements are removed from the document flow and positioned relative to their nearest positioned
+						(non-static) ancestor. They do not affect other elements on the page.</p>
+				</li>
+				<li><strong>fixed:</strong>
+					<p>Elements are positioned relative to the viewport and do not move when the page is scrolled. This
+						is often used for headers or navigation bars.</p>
+				</li>
+				<li><strong>sticky:</strong>
+					<p>Combines the behavior of relative and fixed positioning. The element behaves like relative until
+						it reaches a specific scroll position, after which it becomes fixed.</p>
+				</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Static */
+		.static {
+			position: static;
+			background-color: lightblue;
+		}
+		
+		/* Relative */
+		.relative {
+			position: relative;
+			left: 20px;
+			background-color: lightgreen;
+		}
+		
+		/* Absolute */
+		.absolute-container {
+			position: relative;
+			height: 100px;
+			background-color: lightcoral;
+		}
+		
+		.absolute {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background-color: lightyellow;
+		}
+		
+		/* Fixed */
+		.fixed {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			background-color: lightgray;
+			z-index: 1000;
+		}
+		
+		/* Sticky */
+		.sticky {
+			position: sticky;
+			top: 0;
+			background-color: lightpink;
+		}
+		&lt;/style&gt;
+		
+		&lt;div class="static"&gt;Static Position&lt;/div&gt;
+		&lt;div class="relative"&gt;Relative Position&lt;/div&gt;
+		
+		&lt;div class="absolute-container"&gt;
+			Absolute Container
+			&lt;div class="absolute"&gt;Absolute Position&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="fixed"&gt;Fixed Position&lt;/div&gt;
+		
+		&lt;div class="sticky"&gt;Sticky Position&lt;/div&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+
+			<h2 id="float-clear">6.3 <em>Float and Clear</em></h2>
+			<p>The <strong>float</strong> property allows elements to be placed to the left or right of their container,
+				allowing text or inline elements to flow around them. It is commonly used for creating layouts, though
+				modern approaches like Flexbox and Grid are now preferred.</p>
+
+			<p><strong>Clear</strong> is used to prevent elements from wrapping around floated elements, ensuring proper
+				layout.</p>
+
+			<h3>Float:</h3>
+			<ul>
+				<li><strong>left:</strong> The element is floated to the left of its container.</li>
+				<li><strong>right:</strong> The element is floated to the right of its container.</li>
+				<li><strong>none:</strong> This is the default value, where the element does not float.</li>
+			</ul>
+
+			<h3>Clear:</h3>
+			<ul>
+				<li><strong>left:</strong> Prevents the element from appearing next to floated elements on the left.
+				</li>
+				<li><strong>right:</strong> Prevents the element from appearing next to floated elements on the right.
+				</li>
+				<li><strong>both:</strong> Prevents the element from appearing next to floated elements on either side.
+				</li>
+			</ul>
+
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+			/* Float Example */
+			.floated {
+				float: left;
+				width: 150px;
+				height: 100px;
+				background-color: lightblue;
+				margin-right: 10px;
+			}
+			
+			/* Clear Example */
+			.cleared {
+				clear: both;
+				background-color: lightgreen;
+				padding: 10px;
+			}
+			&lt;/style&gt;
+			
+			&lt;div class="floated"&gt;Floated Left&lt;/div&gt;
+			&lt;div class="floated"&gt;Floated Left&lt;/div&gt;
+			&lt;div class="cleared"&gt;Cleared Content (Appears Below Floats)&lt;/div&gt;
+					</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="z-index">6.4 <em>Z-Index</em></h2>
+			<p>The <strong>z-index</strong> property specifies the stack order of elements. Higher values place elements
+				in front of those with lower values. It only applies to elements with a <code>position</code> value
+				other than <code>static</code>.</p>
+
+			<p><strong>Key Points:</strong></p>
+			<ul>
+				<li>Elements with the same <code>z-index</code> stack in their order of appearance in the HTML.</li>
+				<li>A higher <code>z-index</code> value brings an element forward.</li>
+			</ul>
+
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+			/* Box 1 (Lowest Z-Index) */
+			.box1 {
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				width: 100px;
+				height: 100px;
+				background-color: lightblue;
+				z-index: 1;
+			}
+			
+			/* Box 2 (Higher Z-Index) */
+			.box2 {
+				position: absolute;
+				top: 80px;
+				left: 80px;
+				width: 100px;
+				height: 100px;
+				background-color: lightgreen;
+				z-index: 2;
+			}
+			
+			/* Box 3 (Highest Z-Index) */
+			.box3 {
+				position: absolute;
+				top: 110px;
+				left: 110px;
+				width: 100px;
+				height: 100px;
+				background-color: lightcoral;
+				z-index: 3;
+			}
+			&lt;/style&gt;
+			
+			&lt;div class="box1"&gt;Box 1&lt;/div&gt;
+			&lt;div class="box2"&gt;Box 2&lt;/div&gt;
+			&lt;div class="box3"&gt;Box 3&lt;/div&gt;
+					</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="css-layout-techniques">6.5 <em>CSS Layout Techniques (Flexbox, Grid, and Float-based)</em></h2>
+			<p>Modern CSS provides powerful layout techniques to create responsive and efficient designs:</p>
+
+			<h3>1. Flexbox:</h3>
+			<p>Flexbox is a one-dimensional layout model that works in either a row or column direction. It is ideal for
+				aligning and distributing space among items in a container.</p>
+			<p>Key Properties:</p>
+			<ul>
+				<li><strong>justify-content:</strong> Aligns items horizontally (e.g., <code>flex-start</code>,
+					<code>center</code>, <code>space-between</code>).
+				</li>
+				<li><strong>align-items:</strong> Aligns items vertically (e.g., <code>stretch</code>,
+					<code>center</code>, <code>flex-end</code>).
+				</li>
+				<li><strong>flex-wrap:</strong> Determines whether items should wrap onto the next line.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+			.flex-container {
+				display: flex;
+				gap: 10px;
+				justify-content: center;
+				align-items: center;
+				background-color: lightgray;
+				padding: 10px;
+			}
+			
+			.flex-item {
+				background-color: lightblue;
+				padding: 20px;
+				text-align: center;
+			}
+			&lt;/style&gt;
+			
+			&lt;div class="flex-container"&gt;
+				&lt;div class="flex-item"&gt;Item 1&lt;/div&gt;
+				&lt;div class="flex-item"&gt;Item 2&lt;/div&gt;
+				&lt;div class="flex-item"&gt;Item 3&lt;/div&gt;
+			&lt;/div&gt;
+					</code></pre>
+			</div>
+
+			<h3>2. Grid:</h3>
+			<p>Grid is a two-dimensional layout system that allows precise control over rows and columns. It is suitable
+				for complex layouts.</p>
+			<p>Key Properties:</p>
+			<ul>
+				<li><strong>grid-template-rows:</strong> Defines the number and size of rows.</li>
+				<li><strong>grid-template-columns:</strong> Defines the number and size of columns.</li>
+				<li><strong>gap:</strong> Specifies spacing between grid items.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+			.grid-container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 10px;
+				background-color: lightgray;
+				padding: 10px;
+			}
+			
+			.grid-item {
+				background-color: lightgreen;
+				padding: 20px;
+				text-align: center;
+			}
+			&lt;/style&gt;
+			
+			&lt;div class="grid-container"&gt;
+				&lt;div class="grid-item"&gt;Grid Item 1&lt;/div&gt;
+				&lt;div class="grid-item"&gt;Grid Item 2&lt;/div&gt;
+				&lt;div class="grid-item"&gt;Grid Item 3&lt;/div&gt;
+			&lt;/div&gt;
+					</code></pre>
+			</div>
+
+			<h3>3. Float-based Layout:</h3>
+			<p>This older method uses <code>float</code> to create layouts but is less flexible compared to Flexbox and
+				Grid.</p>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+			.float-container {
+				width: 100%;
+				background-color: lightgray;
+				overflow: hidden;
+			}
+			
+			.float-item {
+				float: left;
+				width: 30%;
+				margin: 1.66%;
+				background-color: lightblue;
+				padding: 20px;
+				text-align: center;
+			}
+			&lt;/style&gt;
+			
+			&lt;div class="float-container"&gt;
+				&lt;div class="float-item"&gt;Float Item 1&lt;/div&gt;
+				&lt;div class="float-item"&gt;Float Item 2&lt;/div&gt;
+				&lt;div class="float-item"&gt;Float Item 3&lt;/div&gt;
+			&lt;/div&gt;
+					</code></pre>
+			</div>
+		</div>
+		<hr>
+		<div class="content">
+
+			<h1 id="responsive-design">7. Responsive Design (📱 Designing for All Devices)</h1>
+
+			<h2 id="media-queries">7.1 <em>Introduction to Media Queries</em></h2>
+			<p><strong>Media queries</strong> are a cornerstone of responsive design. They allow you to apply specific
+				styles based on the characteristics of the user's device, such as screen size, resolution, orientation,
+				or aspect ratio. Media queries ensure that your webpage adapts to different devices seamlessly.</p>
+
+			<p><strong>Syntax:</strong> Media queries use the <code>@media</code> rule to define conditions under which
+				specific styles should be applied:</p>
+			<ul>
+				<li><strong>min-width:</strong> Triggers styles when the viewport width is greater than or equal to the
+					specified value.</li>
+				<li><strong>max-width:</strong> Triggers styles when the viewport width is less than or equal to the
+					specified value.</li>
+				<li><strong>min-height</strong> and <strong>max-height:</strong> Apply styles based on viewport height.
+				</li>
+				<li><strong>orientation:</strong> Checks whether the device is in <code>landscape</code> or
+					<code>portrait</code> mode.
+				</li>
+			</ul>
+
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Base Styles */
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			background-color: white;
+			color: black;
+		}
+		
+		/* Styles for screens wider than 768px */
+		@media (min-width: 768px) {
+			body {
+				font-size: 18px;
+				background-color: lightblue;
+			}
+		}
+		
+		/* Styles for screens narrower than 480px */
+		@media (max-width: 480px) {
+			body {
+				font-size: 14px;
+				background-color: lightgray;
+			}
+		}
+		&lt;/style&gt;
+		&lt;body&gt;
+			Resize the browser window to see the styles change!
+		&lt;/body&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="approaches">7.2 <em>Mobile-First vs. Desktop-First Approach</em></h2>
+			<p>There are two main approaches to responsive design:</p>
+
+			<h3>Mobile-First Approach:</h3>
+			<ul>
+				<li>Designing for smaller screens first and progressively enhancing styles for larger screens.</li>
+				<li>Uses <code>min-width</code> media queries for scaling up.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Base styles for mobile devices */
+		body {
+			font-size: 14px;
+		}
+		
+		/* Enhance styles for tablets and larger screens */
+		@media (min-width: 768px) {
+			body {
+				font-size: 16px;
+			}
+		}
+		
+		@media (min-width: 1200px) {
+			body {
+				font-size: 18px;
+			}
+		}
+		&lt;/style&gt;
+				</code></pre>
+			</div>
+
+			<h3>Desktop-First Approach:</h3>
+			<ul>
+				<li>Designing for larger screens first and progressively adapting for smaller screens.</li>
+				<li>Uses <code>max-width</code> media queries for scaling down.</li>
+			</ul>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Base styles for desktops */
+		body {
+			font-size: 18px;
+		}
+		
+		/* Adapt styles for smaller screens */
+		@media (max-width: 1200px) {
+			body {
+				font-size: 16px;
+			}
+		}
+		
+		@media (max-width: 768px) {
+			body {
+				font-size: 14px;
+			}
+		}
+		&lt;/style&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="css-units">7.3 <em>CSS Units (px, %, em, rem, vh, vw, etc.)</em></h2>
+			<p>CSS offers a variety of units for defining size, spacing, and proportions:</p>
+
+			<h3>Absolute Units:</h3>
+			<ul>
+				<li><strong>px:</strong> A fixed unit representing pixels. Best for precise dimensions but not
+					responsive.</li>
+			</ul>
+
+			<h3>Relative Units:</h3>
+			<ul>
+				<li><strong>em:</strong> Relative to the font size of the element's parent. Useful for scalable designs.
+				</li>
+				<li><strong>rem:</strong> Relative to the font size of the root element (<code>html</code>). More
+					predictable than <code>em</code>.</li>
+				<li><strong>%:</strong> Relative to the parent element's size. Commonly used for widths and heights.
+				</li>
+				<li><strong>vh:</strong> 1% of the viewport height. Ideal for full-height elements.</li>
+				<li><strong>vw:</strong> 1% of the viewport width. Useful for responsive widths.</li>
+			</ul>
+
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Absolute and Relative Units */
+		.box {
+			width: 50vw; /* 50% of the viewport width */
+			height: 50vh; /* 50% of the viewport height */
+			font-size: 2rem; /* 2 times the root font size */
+			background-color: lightcoral;
+		}
+		&lt;/style&gt;
+		
+		&lt;div class="box"&gt;Responsive Box&lt;/div&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="fluid-typography">7.4 <em>Fluid Typography and Responsive Images</em></h2>
+			<h3>Fluid Typography:</h3>
+			<p>Fluid typography ensures text scales smoothly between a minimum and maximum size using
+				<code>clamp()</code>:
+			</p>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Fluid Typography */
+		h1 {
+			font-size: clamp(1.5rem, 5vw, 3rem);
+		}
+		&lt;/style&gt;
+		
+		&lt;h1&gt;Responsive Heading&lt;/h1&gt;
+				</code></pre>
+			</div>
+
+			<h3>Responsive Images:</h3>
+			<p>Responsive images adapt to screen size using <code>max-width</code> and <code>height: auto</code>. The
+				<code>&lt;picture&gt;</code> element can provide multiple image sources based on device resolution.
+			</p>
+			<p>Example:</p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		&lt;/style&gt;
+		
+		&lt;picture&gt;
+			&lt;source srcset="image-large.jpg" media="(min-width: 768px)"&gt;
+			&lt;source srcset="image-small.jpg" media="(max-width: 767px)"&gt;
+			&lt;img src="image-default.jpg" alt="Responsive Image"&gt;
+		&lt;/picture&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="breakpoints">7.5 <em>Breakpoints and Best Practices</em></h2>
+			<p><strong>Breakpoints</strong> are screen widths at which your layout changes to provide the best user
+				experience. Common breakpoints include:</p>
+			<ul>
+				<li>Small devices: <code>max-width: 576px</code></li>
+				<li>Tablets: <code>min-width: 577px</code> and <code>max-width: 768px</code></li>
+				<li>Desktops: <code>min-width: 769px</code></li>
+			</ul>
+
+			<p><strong>Best Practices:</strong></p>
+			<ul>
+				<li>Start with a mobile-first approach to prioritize smaller screens.</li>
+				<li>Use relative units like <code>em</code>, <code>rem</code>, and percentages for scalability.</li>
+				<li>Test designs on various devices and screen sizes.</li>
+				<li>Minimize large images for faster loading on mobile devices.</li>
+			</ul>
+		</div>
+		<hr>
+		<div class="content">
+
+			<h1 id="advanced-styling">8. Advanced Styling (✨ Elevating Your Design)</h1>
+
+			<h2 id="css-transitions-animations">8.1 <em>CSS Transitions and Animations</em></h2>
+			<p><strong>CSS Transitions</strong> allow you to smoothly change property values over time, providing a
+				dynamic effect without JavaScript. A transition occurs when a property value changes, and CSS defines
+				how long the change should take, and what type of transition effect should be applied.</p>
+
+			<p><strong>CSS Syntax for Transition:</strong></p>
+			<ul>
+				<li><code>transition-property:</code> Specifies which property should change.</li>
+				<li><code>transition-duration:</code> Defines how long the transition will last.</li>
+				<li><code>transition-timing-function:</code> Controls the speed curve of the transition.</li>
+				<li><code>transition-delay:</code> Adds a delay before the transition starts.</li>
+			</ul>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Base Styles */
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease, transform 0.3s ease;
+		}
+		
+		button:hover {
+			background-color: #45a049;
+			transform: scale(1.1); /* Scale the button on hover */
+		}
+		&lt;/style&gt;
+		
+		&lt;button&gt;Hover over me!&lt;/button&gt;
+				</code></pre>
+			</div>
+
+			<p><strong>CSS Animations</strong> offer more control compared to transitions, allowing you to define
+				keyframes and specify various stages of the animation.</p>
+			<p><strong>Example of CSS Animation:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Define Keyframes */
+		@keyframes example {
+			0% {
+				background-color: red;
+				transform: translateX(0);
+			}
+			50% {
+				background-color: yellow;
+				transform: translateX(100px);
+			}
+			100% {
+				background-color: green;
+				transform: translateX(0);
+			}
+		}
+		
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation: example 2s infinite; /* Apply animation */
+		}
+		&lt;/style&gt;
+		
+		&lt;div&gt;&lt;/div&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="css-variables">8.2 <em>CSS Variables (Custom Properties)</em></h2>
+			<p><strong>CSS Variables</strong> allow you to store values in a reusable way and reference them throughout
+				your stylesheets. This improves maintainability and flexibility in large projects. Variables are defined
+				using the <code>--</code> prefix.</p>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Define CSS Variables */
+		:root {
+			--primary-color: #4CAF50;
+			--secondary-color: #FFC107;
+		}
+		
+		/* Use Variables */
+		body {
+			background-color: var(--primary-color);
+			color: var(--secondary-color);
+		}
+		
+		button {
+			background-color: var(--primary-color);
+			color: white;
+		}
+		&lt;/style&gt;
+		
+		&lt;button&gt;Click Me!&lt;/button&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="css-filters">8.3 <em>CSS Filters (Blur, Brightness, etc.)</em></h2>
+			<p><strong>CSS Filters</strong> apply graphical effects like blur, brightness, contrast, etc., to elements.
+				These effects are similar to photo editing tools and can be used for images, text, or any other element
+				on the page.</p>
+
+			<p><strong>Common Filters:</strong></p>
+			<ul>
+				<li><strong>blur:</strong> Adds a blur effect to the element.</li>
+				<li><strong>brightness:</strong> Adjusts the brightness of the element.</li>
+				<li><strong>contrast:</strong> Adjusts the contrast of the element.</li>
+				<li><strong>grayscale:</strong> Converts the element to grayscale.</li>
+				<li><strong>invert:</strong> Inverts the color of the element.</li>
+			</ul>
+
+			<p><strong>Example of Using CSS Filters:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Apply Filters to an Image */
+		img {
+			filter: grayscale(100%) brightness(1.2) blur(2px);
+		}
+		&lt;/style&gt;
+		
+		&lt;img src="image.jpg" alt="Filtered Image"&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="transformations">8.4 <em>Transformations (Rotate, Scale, Skew, Translate)</em></h2>
+			<p><strong>Transformations</strong> in CSS enable elements to be moved, resized, rotated, or skewed without
+				affecting the document flow. These transformations can be combined and applied to any HTML element.</p>
+
+			<p><strong>Common Transformation Functions:</strong></p>
+			<ul>
+				<li><strong>rotate:</strong> Rotates the element by a specified angle.</li>
+				<li><strong>scale:</strong> Resizes the element, either uniformly or non-uniformly.</li>
+				<li><strong>skew:</strong> Skews the element along the X or Y axis.</li>
+				<li><strong>translate:</strong> Moves the element along the X or Y axis.</li>
+			</ul>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Apply Transformations */
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: coral;
+			transform: rotate(45deg) scale(1.2) translateX(50px);
+		}
+		&lt;/style&gt;
+		
+		&lt;div&gt;&lt;/div&gt;
+				</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="advanced-selectors">8.5 <em>Advanced Selectors (Nth-child, Not, etc.)</em></h2>
+			<p><strong>Advanced Selectors</strong> allow for more complex and precise selection of elements in CSS.
+				These selectors are essential for targeting specific elements based on their position, attributes, or
+				other criteria.</p>
+
+			<h3>Common Advanced Selectors:</h3>
+			<ul>
+				<li><strong>:nth-child(n):</strong> Selects the nth child of a parent element. Example:
+					<code>li:nth-child(2)</code> targets the second list item.
+				</li>
+				<li><strong>:not(selector):</strong> Excludes elements that match the selector. Example:
+					<code>div:not(.class)</code> selects all <code>div</code> elements that don't have the
+					<code>class</code> class.
+				</li>
+				<li><strong>:first-child, :last-child:</strong> Targets the first or last child of a parent.</li>
+				<li><strong>:nth-of-type(n):</strong> Selects the nth child of a specific type, like
+					<code>p:nth-of-type(2)</code>.
+				</li>
+			</ul>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+		/* Target every even list item */
+		li:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		
+		/* Exclude div with class "exclude" */
+		div:not(.exclude) {
+			border: 2px solid black;
+		}
+		&lt;/style&gt;
+		
+		&lt;ul&gt;
+			&lt;li&gt;Item 1&lt;/li&gt;
+			&lt;li&gt;Item 2&lt;/li&gt;
+			&lt;li&gt;Item 3&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div&gt;This is not excluded&lt;/div&gt;
+		&lt;div class="exclude"&gt;This is excluded&lt;/div&gt;
+				</code></pre>
+			</div>
+
+		</div>
+		<hr>
+
+		<div class="content">
+			<h1 id="css-for-accessibility">9. CSS for Accessibility (Making Designs Inclusive ♿)</h1>
+
+			<h2 id="focus-styles">9.1 <em>Focus Styles</em></h2>
+			<p><strong>Focus Styles</strong> are essential for users navigating your site with a keyboard or other
+				assistive devices. They provide visual cues to indicate which element is currently focused. This is
+				particularly important for accessibility, as it ensures that users can see where their keyboard or mouse
+				cursor is currently placed.</p>
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Remove default focus style */
+	a:focus {
+		outline: none;
+	}
+	
+	/* Custom focus style */
+	a:focus {
+		border: 2px solid #4CAF50;
+		background-color: #e0f7e0;
+	}
+	&lt;/style&gt;
+	
+	&lt;a href="#"&gt;Focus on me&lt;/a&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="visibility-and-contrast">9.2 <em>Visibility and Contrast</em></h2>
+			<p><strong>Visibility and Contrast</strong> are crucial for making websites accessible to people with visual
+				impairments. Sufficient contrast between text and its background ensures readability. Tools like the
+				<em>WCAG Contrast Checker</em> can help ensure your designs meet accessibility standards.
+			</p>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* High contrast text */
+	p {
+		color: #333;
+		background-color: #FFF;
+	}
+	&lt;/style&gt;
+	
+	&lt;p&gt;This is highly visible text&lt;/p&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="screen-reader-support">9.3 <em>Screen Reader Support (Hidden Elements and Aria)</em></h2>
+			<p><strong>Screen Reader Support</strong> is vital for users who rely on screen readers to navigate
+				websites. You can hide elements visually but still allow screen readers to access them by using the
+				<code>aria-hidden="true"</code> attribute and CSS techniques to make elements accessible without
+				disrupting the layout.
+			</p>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Visually hidden but accessible to screen readers */
+	.screen-reader-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		clip-path: inset(50%);
+		overflow: hidden;
+	}
+	&lt;/style&gt;
+	
+	&lt;div class="screen-reader-only"&gt;This is for screen readers only&lt;/div&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h1 id="preprocessors-and-frameworks">10. Preprocessors and Frameworks (Boosting Productivity 🚀)</h1>
+
+			<h2 id="css-preprocessors">10.1 <em>Introduction to CSS Preprocessors (Sass, LESS)</em></h2>
+			<p><strong>CSS Preprocessors</strong> like Sass and LESS add extra functionality to standard CSS. They allow
+				you to use variables, mixins, and functions to streamline your workflow, make the CSS more readable, and
+				improve maintainability in large projects.</p>
+
+			<p><strong>Example:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Sass Example */
+	$primary-color: #4CAF50;
+	
+	body {
+		background-color: $primary-color;
+	}
+	&lt;/style&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="variables-mixins-nesting">10.2 <em>Understanding Variables, Mixins, and Nesting</em></h2>
+			<p><strong>Variables</strong> allow you to store values (like colors or fonts) for reuse, making your styles
+				more consistent and easier to update. <strong>Mixins</strong> allow you to group styles together, while
+				<strong>Nesting</strong> enables you to write CSS in a hierarchical structure, making it more readable.
+			</p>
+
+			<p><strong>Example of Sass Mixins and Nesting:</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* Mixin Example */
+	@mixin border-radius($radius) {
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		border-radius: $radius;
+	}
+	
+	.box {
+		@include border-radius(10px);
+		background-color: #4CAF50;
+		color: white;
+	}
+	&lt;/style&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="css-frameworks">10.3 <em>CSS Frameworks (Bootstrap, Tailwind, etc.)</em></h2>
+			<p><strong>CSS Frameworks</strong> like Bootstrap and Tailwind are pre-designed libraries that speed up the
+				development process. They come with pre-written CSS classes, which help you quickly build responsive
+				layouts, handle typography, and much more without having to write everything from scratch.</p>
+
+			<p><strong>Example (Bootstrap):</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+	&lt;div class="container"&gt;
+		&lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+	&lt;/div&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="modular-css-best-practices">10.4 <em>Best Practices for Modular CSS</em></h2>
+			<p><strong>Modular CSS</strong> is a technique where you divide your CSS into smaller, reusable components
+				that can be used in multiple places. This approach reduces repetition, improves scalability, and ensures
+				your CSS is more maintainable as the project grows.</p>
+
+			<p><strong>Example:</strong> Create reusable class names that focus on a single responsibility, such as
+				`.btn`, `.card`, and `.header`.</p>
+
+			<hr>
+
+			<h1 id="css-best-practices">11. CSS Best Practices (Clean and Maintainable Code 🛠️)</h1>
+
+			<h2 id="scalable-maintainable-css">11.1 <em>Writing Scalable and Maintainable CSS</em></h2>
+			<p><strong>Scalable CSS</strong> refers to styles that can easily adapt as your project grows. Writing
+				maintainable CSS involves separating concerns, using naming conventions, and avoiding overly complex
+				selectors that can become difficult to manage over time.</p>
+
+			<hr>
+
+			<h2 id="naming-conventions">11.2 <em>Naming Conventions (BEM, OOCSS, SMACSS)</em></h2>
+			<p><strong>Naming conventions</strong> like BEM (Block Element Modifier), OOCSS (Object-Oriented CSS), and
+				SMACSS (Scalable and Modular Architecture for CSS) help structure your CSS in a way that is easy to
+				understand and maintain.</p>
+
+			<p><strong>Example (BEM):</strong></p>
+			<div class="code-box">
+				<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+				<pre><code>&lt;style&gt;
+	/* BEM Example */
+	.btn {
+		padding: 10px;
+		background-color: #4CAF50;
+	}
+	.btn--primary {
+		background-color: #2196F3;
+	}
+	&lt;/style&gt;
+	
+	&lt;button class="btn btn--primary"&gt;Click Me&lt;/button&gt;
+	</code></pre>
+			</div>
+
+			<hr>
+
+			<h2 id="avoiding-common-pitfalls">11.3 <em>Avoiding Common Pitfalls (Over-Specificity, Unused CSS)</em></h2>
+			<p><strong>Over-Specificity</strong> can make your CSS harder to override and maintain. Avoid using
+				selectors that are too specific or complex. Also, regularly remove unused CSS to keep your code clean
+				and reduce file size.</p>
+
+			<hr>
+
+			<h2 id="debugging-tools">11.4 <em>Debugging and Browser Developer Tools</em></h2>
+			<p><strong>Browser Developer Tools</strong> are essential for debugging CSS. Tools like Chrome DevTools
+				allow you to inspect, modify, and troubleshoot your CSS live, making it easier to identify and fix
+				issues.</p>
+
+
+		</div>
+
+		<hr>
+
+
+
+
+	</div>
+
+
+
+
+	<div class="right-container">
+		<textarea id="code" placeholder="Write your HTML and CSS code here..."></textarea>
+		<iframe id="output"></iframe>
+	</div>
+
+	<button id="theme-toggle-btn" class="theme-toggle-btn"><i class='bx bx-sun'></i></button>
+
+
+</body>
+
+</html>
