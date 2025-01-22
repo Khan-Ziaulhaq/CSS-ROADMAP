@@ -551,11 +551,11 @@ CSS Variables (`--variable-name`) allow reusable, dynamic values.
 
 
 
-### 9. CSS for Accessibility (Making Designs Inclusive ♿)
+## 9. CSS for Accessibility (Making Designs Inclusive ♿)
 
 Creating accessible web designs is essential for ensuring that users of all abilities can navigate and interact with your site effectively. This section focuses on optimizing CSS for accessibility.
 
-#### **Focus Styles**
+### **Focus Styles**
 Focus styles are important for users navigating via keyboard. By default, browsers apply a focus outline to focused elements (like buttons or links), but these can be easily customized to improve visibility.
 
 **Best Practice:**
@@ -570,7 +570,7 @@ button:focus {
 
 **Why it’s important:** Users who rely on keyboards need clear indications of where they are on the page, and these styles help them keep track.
 
-#### **Visibility and Contrast**
+### **Visibility and Contrast**
 Color contrast and visibility are crucial for users with visual impairments. Ensure your text and background colors have sufficient contrast to meet WCAG (Web Content Accessibility Guidelines) standards.
 
 **Best Practice:**
@@ -585,7 +585,7 @@ Use color contrast checkers to verify that the contrast ratio meets the accessib
 
 Ensure that text is legible on both light and dark backgrounds by selecting colors carefully.
 
-#### **Screen Reader Support (Hidden Elements and ARIA)**
+### **Screen Reader Support (Hidden Elements and ARIA)**
 Screen readers rely on proper markup and ARIA (Accessible Rich Internet Applications) attributes to convey meaning to users. CSS can assist in ensuring content is accessible by visually hiding elements but keeping them accessible for screen readers.
 
 **Best Practice:**
@@ -604,9 +604,9 @@ Use `visibility: hidden` or `display: none` to hide elements visually, but for s
 
 ---
 
-### 10. Preprocessors and Frameworks (Boosting Productivity 🚀)
+## 10. Preprocessors and Frameworks (Boosting Productivity 🚀)
 
-#### **Introduction to CSS Preprocessors (Sass, LESS)**
+### **Introduction to CSS Preprocessors (Sass, LESS)**
 CSS preprocessors extend CSS by providing features like variables, mixins, and nested rules that can help you write more efficient and maintainable code. Sass and LESS are the most popular preprocessors.
 
 - **Sass:** An extension of CSS that includes advanced features like variables, mixins, and inheritance.
@@ -623,7 +623,7 @@ button {
 }
 ```
 
-#### **Understanding Variables, Mixins, and Nesting**
+### **Understanding Variables, Mixins, and Nesting**
 - **Variables:** Store values like colors, fonts, or sizes for reuse.
 - **Mixins:** Reusable chunks of code that can be included in multiple places.
 - **Nesting:** Writing selectors within other selectors for a hierarchical structure.
@@ -646,7 +646,7 @@ button {
 }
 ```
 
-#### **CSS Frameworks (Bootstrap, Tailwind, etc.)**
+### **CSS Frameworks (Bootstrap, Tailwind, etc.)**
 CSS frameworks provide a set of pre-written styles and components that allow you to build web layouts quickly.
 
 - **Bootstrap:** Offers a grid system, components like buttons, navigation bars, and more.
@@ -660,7 +660,7 @@ CSS frameworks provide a set of pre-written styles and components that allow you
 <button class="bg-blue-500 text-white p-2 rounded">Click Me</button>
 ```
 
-#### **Best Practices for Modular CSS**
+### **Best Practices for Modular CSS**
 Keep your CSS modular by organizing styles into reusable components. This makes your code scalable and maintainable.
 
 - Split your CSS into different files (e.g., for layout, components, themes).
@@ -682,9 +682,9 @@ Keep your CSS modular by organizing styles into reusable components. This makes 
 
 ---
 
-### 11. CSS Best Practices (Clean and Maintainable Code 🛠️)
+## 11. CSS Best Practices (Clean and Maintainable Code 🛠️)
 
-#### **Writing Scalable and Maintainable CSS**
+### **Writing Scalable and Maintainable CSS**
 As projects grow, maintaining clean and efficient CSS becomes crucial. Write CSS that is easy to scale and modify by following the principles of separation of concerns and modularity.
 
 **Best Practices:**
@@ -692,7 +692,7 @@ As projects grow, maintaining clean and efficient CSS becomes crucial. Write CSS
 - Organize your CSS into reusable components.
 - Avoid excessive nesting.
 
-#### **Naming Conventions (BEM, OOCSS, SMACSS)**
+### **Naming Conventions (BEM, OOCSS, SMACSS)**
 Using naming conventions like BEM (Block, Element, Modifier) ensures that your class names are meaningful and consistent.
 
 - **BEM Example:**
@@ -713,18 +713,18 @@ Using naming conventions like BEM (Block, Element, Modifier) ensures that your c
 }
 ```
 
-#### **Avoiding Common Pitfalls (Over-Specificity, Unused CSS)**
+### **Avoiding Common Pitfalls (Over-Specificity, Unused CSS)**
 - **Over-Specificity:** Too many nested selectors or overly specific class names can make it difficult to override styles.
 - **Unused CSS:** Remove unused CSS to keep your stylesheets lightweight and improve performance.
 
-#### **Debugging and Browser Developer Tools**
+### **Debugging and Browser Developer Tools**
 Use browser developer tools to inspect and debug your CSS. This helps you quickly identify issues like unexpected margin, padding, or overflow problems.
 
 ---
 
-### 12. CSS for Advanced Projects (🚧 Real-World Application)
+## 12. CSS for Advanced Projects (🚧 Real-World Application)
 
-#### **Creating Custom Themes**
+### **Creating Custom Themes**
 CSS allows you to create dynamic themes for your website by adjusting color schemes, fonts, and layout styles. Use CSS variables to make your themes customizable.
 
 ```css
@@ -739,7 +739,7 @@ body {
 }
 ```
 
-#### **CSS Grid for Advanced Layouts**
+### **CSS Grid for Advanced Layouts**
 CSS Grid is a powerful tool for building complex, two-dimensional layouts. It allows you to create both rows and columns, making it perfect for sophisticated designs.
 
 ```css
@@ -754,7 +754,7 @@ CSS Grid is a powerful tool for building complex, two-dimensional layouts. It al
 }
 ```
 
-#### **Building Complex Animations**
+### **Building Complex Animations**
 Create smooth and intricate animations with CSS. You can control the timing, easing, and sequence of various keyframes to bring your designs to life.
 
 ```css
@@ -769,7 +769,7 @@ Create smooth and intricate animations with CSS. You can control the timing, eas
 }
 ```
 
-#### **Integrating CSS with JavaScript**
+### **Integrating CSS with JavaScript**
 You can manipulate CSS styles dynamically with JavaScript, such as toggling classes or modifying inline styles in response to user interactions.
 
 ```javascript
